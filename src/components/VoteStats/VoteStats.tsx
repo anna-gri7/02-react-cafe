@@ -1,7 +1,7 @@
 import styles from './VoteStats.module.css'
 import type { Votes } from '../../types/votes'
 
-export default function VoteStars({ votes, totalVotes, positiveRate }: VoteStatsProps) { 
+export default function VoteStats({ votes, totalVotes, positiveRate }: VoteStatsProps) { 
    return  (<div className={styles.container}>
        <p className={styles.stat}>Good: <strong>{votes.good}</strong></p>
        <p className={styles.stat}>Neutral: <strong>{votes.neutral}</strong></p>
